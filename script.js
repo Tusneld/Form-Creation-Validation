@@ -44,15 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isValid) {
             // Success
             feedbackDiv.textContent = "Registration successful!";
-            feedbackDiv.style.backgroundColor = "#d4edda"; // Light green background
-            feedbackDiv.style.color = "#155724"; // Dark green text
+            feedbackDiv.style.backgroundColor = 'transparent'; // Light green background
+            feedbackDiv.style.color = "#28a745"; // Dark green text
             // Clear the form fields upon successful registration (optional but good UX)
             form.reset();
         } else {
             // Failure
             feedbackDiv.innerHTML = messages.join('<br>');
             feedbackDiv.style.backgroundColor = "#ffbaba"; // Light red background (from CSS)
-            feedbackDiv.style.color = "#d8000c"; // Dark red text (from CSS)
+            feedbackDiv.style.color = "#dc3545"; // Dark red text (from CSS)
         }
     });
+
 });
